@@ -1,0 +1,21 @@
+In file included from /opt/dymola-2020-x86_64/source/dsblock1.c:65:0,
+                 from ../dsmodel.c:49606:
+/opt/dymola-2020-x86_64/source/ModelicaInternal.c: In function ‘ModelicaInternal_readDirectory’:
+/opt/dymola-2020-x86_64/source/ModelicaInternal.c:536:29: warning: too many arguments for format [-Wformat-extra-args]
+         ModelicaFormatError("Not possible to get file names of \"%s\":\n",
+                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /opt/dymola-2020-x86_64/source/dsblock1.c:66:0,
+                 from ../dsmodel.c:49606:
+/opt/dymola-2020-x86_64/source/ModelicaStrings.c: In function ‘ModelicaStrings_scanInteger’:
+/opt/dymola-2020-x86_64/source/ModelicaStrings.c:315:26: warning: implicit declaration of function ‘strtol_l’; did you mean ‘strtoll’? [-Wimplicit-function-declaration]
+                 x = (int)strtol_l(buf, &endptr, 10, loc);
+                          ^~~~~~~~
+                          strtoll
+/opt/dymola-2020-x86_64/source/ModelicaStrings.c: In function ‘ModelicaStrings_scanReal’:
+/opt/dymola-2020-x86_64/source/ModelicaStrings.c:427:13: warning: implicit declaration of function ‘strtod_l’; did you mean ‘strtoull’? [-Wimplicit-function-declaration]
+         x = strtod_l(buf, &endptr, loc);
+             ^~~~~~~~
+             strtoull
+dsmodel.o: In function `ModelicaInternal_temporaryFileName':
+dsmodel.c:(.text+0x1bc63): warning: the use of `tmpnam' is dangerous, better use `mkstemp'
+Created Modelica_Electrical_Analog_Examples_CauerLowPassAnalog.fmu
